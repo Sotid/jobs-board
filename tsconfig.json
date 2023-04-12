@@ -24,7 +24,9 @@
     },
     "types": [
       "@types/node",
-      "@nuxt/types"
+      "@nuxt/types",
+      "@types/jest",
+
     ]
   },
   "extends": "./.nuxt/tsconfig.json",
