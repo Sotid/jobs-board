@@ -11,12 +11,20 @@ const getDateDif = (targetDate) => {
         };
 };
 
-// export const publishedDate = (index: number) => {
-//   const { minutes, hours, days, weeks } = getDateDif(index);
-// if(menos de 60 minutos ==> minutes){}
-// if(mas= de 60 minutos < 1440 minutos ==> horas){}
-// if(mas= de 1440 minutos < 10080 minutos ==> weeks){}
+const getPublishedDateText = (date) => {
+  const { minutes, hours, days, weeks } = getDateDif(date);
+if(weeks >= 1){
+  return `${weeks} ${weeks === 1 ? 'week' : 'weeks'} ago`;
+}
+if(days >= 1){
+  return `${days} ${days === 1 ? 'day' : 'days'} ago`;
+}
+if(hours >= 1){
+  return `${hours} ${hours === 1 ? 'hour' : 'hours'} ago`;
+}
+if(minutes >= 1){
+  return `${minutes} ${minutes === 1 ? 'minute' : 'minutes'} ago`;
+}
+}
 
-// }
-
-module.exports = getDateDif;
+module.exports = { getDateDif, getPublishedDateText};
