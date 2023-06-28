@@ -3,7 +3,6 @@ const getDateDif = (targetDate) => {
   const currentDate = new Date();
   if(jobDate > currentDate) throw Error('The date must be in the past');
   const diff = Math.abs(currentDate - jobDate);
-  console.log(jobDate, currentDate)
   return { minutes: Math.floor(diff / 60000),
            hours: Math.floor(diff / (1000 * 60 * 60)), 
            days: Math.floor(diff / (1000 * 60 * 60 * 24)),
