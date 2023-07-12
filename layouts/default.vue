@@ -1,7 +1,8 @@
 <template>
-    <main class="default-layout">
+<AppHeader class="default-layout__header" />
+<main class="default-layout">
     <slot />
-    </main>
+</main>
 </template>
 
 <style scoped lang="scss">
@@ -9,9 +10,6 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
-    @include breakpoint(desktop) {
-        padding: 0 0;
-    }
 }
 
 </style>

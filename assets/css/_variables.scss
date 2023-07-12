@@ -1,36 +1,25 @@
 /* Screen sizes */
-$screen-width-small-mobile: 400px;
-$screen-width-mobile: 600px;
-$screen-width-tablet: 1024px;
-$screen-width-desktop: 1248px;
+$screen-width-mobile: 320px;
+$screen-width-tablet: 768px;
+$screen-width-desktop: 960px;
 
 $screen-widths: (
-  small-mobile: $screen-width-small-mobile,
   mobile: $screen-width-mobile,
   tablet: $screen-width-tablet,
-  desktop-large: $screen-width-desktop,
 );
 
 
 @mixin breakpoint($class) {
     @if $class==mobile {
-      @media (max-width: $screen-width-mobile) {
+      @media (min-width: $screen-width-mobile) {
         @content;
       }
     } @else if $class==tablet {
-      @media (max-width: $screen-width-tablet) {
+      @media (min-width: $screen-width-tablet) {
         @content;
       }
     } @else if $class==desktop {
       @media (min-width: $screen-width-tablet + 1) {
-        @content;
-      }
-    } @else if $class==small-mobile {
-      @media (max-width: $screen-width-small-mobile) {
-        @content;
-      }
-    } @else if $class==desktop-large {
-      @media (min-width: $screen-width-desktop + 1) {
         @content;
       }
     } @else {
