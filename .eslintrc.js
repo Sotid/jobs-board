@@ -10,11 +10,14 @@ module.exports = {
     parser: '@typescript-eslint/parser',
   },
   extends: [
+    '@nuxtjs',
+    'prettier',
+    'prettier/vue',
     'plugin:@typescript-eslint/recommended',
     'plugin:nuxt/recommended',
     'plugin:vue/vue3-recommended',
     'plugin:prettier/recommended',
   ],
-  plugins: ['@typescript-eslint'],
-  rules: { ... },
+  plugins: ['@typescript-eslint', 'prettier'],
+  rules: {  },
 }

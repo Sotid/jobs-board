@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ModeSwitch from './ModeSwitch.vue';
+
 </script>
 
 <template>
@@ -7,6 +9,9 @@
     <NuxtLink to="/" class="app-header__title">
         devJobs
     </NuxtLink> 
+    <div class="app-header__switch">
+    <ModeSwitch />
+    </div>
     </div>
     </header>
 </template>
@@ -24,6 +29,8 @@ height: 120px;
 max-width: 1200px;
 margin: 0 auto;
 padding: 0 1rem; 
+display:flex;
+justify-content: space-between;
     }
 &__title {
     color: white;
@@ -32,6 +39,14 @@ padding: 0 1rem;
     text-decoration: none;
     padding: 1rem;
     display: block;
+    @include breakpoint(desktop) {
+        padding: 2rem 0 0;
+    }
+}
+&__switch {
+    padding: 1rem;
+    display: flex;
+    column-gap: 0.5rem;
     @include breakpoint(desktop) {
         padding: 2rem 0 0;
     }

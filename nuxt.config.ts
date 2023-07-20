@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   '@nuxt/typescript-build',     
   '@nuxtjs/google-fonts'
 ],
+modules: ['nuxt-icon'],
 vite: {
   css: {
     preprocessorOptions: {
