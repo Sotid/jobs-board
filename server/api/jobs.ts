@@ -3,7 +3,7 @@ export default defineEventHandler((event) => {
     jobs: [
   {
      "id":"7a102aa6-ecd3-4f1d-82e1-bb6c738b63bc",
-     "type":"Full Time",
+     "type":"Part Time",
      "url":"https://www.google.com/imgres?imgurl=https%3A%2F%2Fd5mm8ez7cpmwi.cloudfront.net%2FeyJidWNrZXQiOiJzaWduaWNhdC1idWNrZXQiLCJrZXkiOiJibG9nL2N1c3RvbWVycy9yYWJvYmFuay5qcGciLCJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjgyLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWl6ZVNjYW5zIjp0cnVlfSwicmVzaXplIjp7IndpZHRoIjoxMDI0LCJoZWlnaHQiOjY4MiwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19&tbnid=mErnVtRY_SZXYM&vet=12ahUKEwi-g-Guu_z-AhVLnCcCHRpBAtgQMygDegUIARDyAQ..i&imgrefurl=https%3A%2F%2Fwww.signicat.com%2Fcustomers%2Frabobank&docid=y0SoySw2QqwMFM&w=1024&h=682&q=rabobank&ved=2ahUKEwi-g-Guu_z-AhVLnCcCHRpBAtgQMygDegUIARDyAQ",
      "created_at":"Wed Jun 10 10:21:35 UTC 2023",
      "company":"Rabobank",
@@ -16,7 +16,7 @@ export default defineEventHandler((event) => {
   },
   {
      "id":"f7b800d5-ada1-4ed8-89e4-fe7b1476bd93",
-     "type":"Full Time",
+     "type":"Part Time",
      "url":"https://www.google.com/imgres?imgurl=https%3A%2F%2Fd5mm8ez7cpmwi.cloudfront.net%2FeyJidWNrZXQiOiJzaWduaWNhdC1idWNrZXQiLCJrZXkiOiJibG9nL2N1c3RvbWVycy9yYWJvYmFuay5qcGciLCJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjgyLCJwcm9ncmVzc2l2ZSI6dHJ1ZSwidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWl6ZVNjYW5zIjp0cnVlfSwicmVzaXplIjp7IndpZHRoIjoxMDI0LCJoZWlnaHQiOjY4MiwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19&tbnid=mErnVtRY_SZXYM&vet=12ahUKEwi-g-Guu_z-AhVLnCcCHRpBAtgQMygDegUIARDyAQ..i&imgrefurl=https%3A%2F%2Fwww.signicat.com%2Fcustomers%2Frabobank&docid=y0SoySw2QqwMFM&w=1024&h=682&q=rabobank&ved=2ahUKEwi-g-Guu_z-AhVLnCcCHRpBAtgQMygDegUIARDyAQ",
      "created_at":"Wed Jun 14 10:37:58 UTC 2023",
      "company":"Rabobank",
@@ -328,7 +328,7 @@ export default defineEventHandler((event) => {
   },
   {
      "id":"9d5a33d2-009b-45ef-bf6d-00642fb0e81c",
-     "type":"Full Time",
+     "type":"Part Time",
      "url":"https://jobs.github.com/positions/9d5a33d2-009b-45ef-bf6d-00642fb0e81c",
      "created_at":"Fri Oct 16 10:15:37 UTC 2022",
      "company":"Unscene",
@@ -588,7 +588,7 @@ export default defineEventHandler((event) => {
   },
   {
      "id":"d9cc2c0c-e269-4ee7-91c5-b3d8d90be7d2",
-     "type":"Contract",
+     "type":"Part time",
      "url":"https://jobs.github.com/positions/d9cc2c0c-e269-4ee7-91c5-b3d8d90be7d2",
      "created_at":"Mon Oct 12 15:59:27 UTC 2022",
      "company":"Gun.io",
@@ -614,7 +614,7 @@ export default defineEventHandler((event) => {
   },
   {
      "id":"2777b9a4-3ddc-4bf1-a31b-55c156319c88",
-     "type":"Full Time",
+     "type":"Part Time",
      "url":"https://jobs.github.com/positions/2777b9a4-3ddc-4bf1-a31b-55c156319c88",
      "created_at":"Mon Oct 12 14:02:36 UTC 2022",
      "company":"GSK",
@@ -627,7 +627,7 @@ export default defineEventHandler((event) => {
   },
   {
      "id":"c980f167-a984-4a1b-9a48-16119f9f0660",
-     "type":"Full Time",
+     "type":"Part Time",
      "url":"https://jobs.github.com/positions/c980f167-a984-4a1b-9a48-16119f9f0660",
      "created_at":"Mon Oct 12 08:42:17 UTC 2022",
      "company":"de Volksbank",

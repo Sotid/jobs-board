@@ -1,10 +1,16 @@
 <script setup lang="ts">
-const { data, error } = useFetch("/api/jobs");
+import { useSearch } from '../composables/use-search'
+import { useDark } from '@vueuse/core'
+
+const isDark = useDark()
+const { filteredJobs } = useSearch()
+const shouldShowEmptyResults = computed(() => filteredJobs.value?.length === 0)
 </script>
 
 <template>
+  <div v-if="shouldShowEmptyResults" class="empty__results" :class="{'empty__results--dark': isDark}">{{ 'No results! Please try again '}}</div>
   <div class="jobs__grid">
-  <job-card v-for="job in data.jobs" :key="job.id" :job="job" />
+  <job-card v-for="job in filteredJobs" :key="job.id" :job="job" />
 </div>
 </template>
 
@@ -21,6 +27,16 @@ padding: 50px 0;
   }
 @include breakpoint(desktop) {
   grid-template-columns: repeat(3, 1fr);
+  }
+}
+.empty__results {
+  color: black;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 50px;
+  &--dark {
+    color: white;
   }
 }
 

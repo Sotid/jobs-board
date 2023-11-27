@@ -13,6 +13,7 @@
     "@nuxt/test-utils": "^3.3.3",
     "@nuxtjs/google-fonts": "^3.0.1",
     "@types/jest": "^29.5.0",
+    "@types/lodash": "4.14.179",
     "jest": "^29.5.0",
     "nuxt": "^3.2.3",
     "nuxt-icon": "^0.4.2",
@@ -27,12 +28,14 @@
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "@vue/eslint-config-standard": "^8.0.1",
+    "@vueuse/components": "^10.5.0",
     "@vueuse/core": "^10.2.1",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.9.0",
+    "lodash": "4.17.21",
     "prettier": "^3.0.0"
   }
 }

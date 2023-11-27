@@ -1,20 +1,16 @@
 <script setup lang="ts">
-import { useDark, useToggle } from '@vueuse/core'
+import { UseDark } from '@vueuse/components'
 
-const isDark = useDark({
-  onChanged(dark: boolean) {
-    console.log('hello', dark)
-  },
-})
 </script>
 
 <template>
-<Icon name="typcn:adjust-brightness" color="white" size="1.3em" class="mode-switch__icon" />
-<label class="mode-switch">
-  <input type="checkbox" @click="isDark()">
-  <span class="slider round"></span>
+
+<Icon name="ic:outline-nightlight" color="white" size="1.3em" class="mode-switch__icon" /> 
+ <label class="mode-switch" >
+  <input type="checkbox" @change="toggleDark()">
+  <span class="slider round" :class="{'slider-dark': isDark}"></span>
 </label>
-<Icon name="ic:outline-nightlight" color="white" size="1.3em" class="mode-switch__icon" />
+ <Icon name="typcn:adjust-brightness" color="white" size="1.3em" class="mode-switch__icon" />
 </template>
 
 
@@ -87,5 +83,8 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+.slider-dark:before {
+  background-color: #625a80;
 }
 </style>
